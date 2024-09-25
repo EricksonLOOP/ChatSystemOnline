@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/chat  # Verifique se a URL do banco de dados está correta
+    username: postgres  # Nome de usuário do PostgreSQL
+    password: root  # Substitua pela senha correta do usuário "postgres"
+  jpa:
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update  # Isso criará ou atualizará o esquema de acordo com as suas entidades
+    show-sql: true  # Exibe as queries no console
